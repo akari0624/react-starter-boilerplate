@@ -1,0 +1,119 @@
+body {
+  box-sizing: border-box;
+}
+
+.deleteCK {
+  margin-left: -18px;
+}
+
+input.longerEditText {
+  width: 700px;
+}
+
+div.listArea_TitleArea {
+  margin-top: 10px;
+}
+
+/*
+div.listArea_BodyArea{
+
+    overflow-x: scroll;
+}
+*/
+.bookName {
+  margin-right: 10px;
+  width: 70px;
+  display: inline-block;
+}
+
+.bookPrice {
+  margin-right: 10px;
+  width: 50px;
+  display: inline-block;
+}
+
+.bookStock {
+  margin-right: 10px;
+  width: 100px;
+  display: inline-block;
+}
+
+.timeArrColumn {
+  width: 150px;
+  display: inline-block;
+}
+.columnInEdit {
+  width: 200px;
+}
+
+span.editingSpan {
+  font-size: 10px;
+  color: red;
+}
+
+div.crudRow {
+  margin-top: 5px;
+}
+
+div.crudRow div.crudRowTitileSpan {
+  display: inline-block;
+  width: 170px;
+}
+
+div.hideAtInit {
+  opacity: 0;
+}
+
+div.showAfterMouseOver {
+  position: absolute;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  opacity: 1;
+  background-color: yellow;
+  padding-top: 10px 3px 3px 10px;
+  margin-bottom: 10px;
+  font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+  font-size: 16px;
+}
+
+createNewRecord {
+  width: 50px;
+  height: 30px;
+  margin-top: 5px;
+  padding: 4px 5px;
+  font-weight: bold;
+  background-color: #ffffff;
+  color: #008cba;
+  border: 2px solid #008cba;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Arial, "微軟正黑體", "Microsoft JhengHei", sans-serif;
+}
+
+createNewRecord:hover {
+  background-color: #008cba;
+  color: #ffffff;
+}
+
+
+/*   new  css  below*/
+
+ul.list-group li.justify-content-between {
+  position: relative;
+}
+
+ul.list-group li.justify-content-between button:nth-child(1) {
+  position: absolute;
+  right: 70px;
+}
+
+ul.list-group li.justify-content-between button:nth-child(2) {
+    position: absolute;
+    right: 5px;
+  }
+
+
+  div.twoButtonArea{
+       height:30px;
+       line-height:100%;
+  }
