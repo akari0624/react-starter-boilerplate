@@ -1,11 +1,9 @@
 import React from 'react'
 
-export default (props) => {
+export default(props) => {
 
-
-    return (
-      <div>Hello React</div>
-    )
+  return (
+    <div>Hello React</div>
+  )
 
 }
-

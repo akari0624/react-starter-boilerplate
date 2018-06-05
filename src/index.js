@@ -12,12 +12,12 @@ const createStoreWithMiddleware = applyMiddleware()(createStore)
 const appStore = createStoreWithMiddleware(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 ReactDOM.render(
-    <Provider store={appStore}>
+  <Provider store={appStore}>
     <BrowserRouter>
-        <div>
-            <Switch>
-                <Route path="/" component={indexRouter}/>
-            </Switch>
-        </div>
+      <div>
+        <Switch>
+          <Route path="/" component={indexRouter}/>
+        </Switch>
+      </div>
     </BrowserRouter>
-</Provider>, document.querySelector('.container'))
+  </Provider>, document.querySelector('.container'))
