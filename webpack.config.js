@@ -29,12 +29,8 @@ module.exports = {
                         }
                     }
                 ],
-                test: /\.less$/
+                test: /\.(css|less)$/
 
-            },
-            {
-                use: ['style-loader', 'css-loader'],
-                test: /\.css$/
             },
             {
                 use:'file-loader',
@@ -53,6 +49,7 @@ module.exports = {
 
     ],
     resolve: {
+        modules: [path.resolve(__dirname, 'node_modules'), 'node_modules'],
         extensions: ['*', '.js', '.jsx']
     },
     devServer: {
