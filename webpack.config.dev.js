@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
     entry: ['babel-polyfill' ,'./src/index.js'],
@@ -35,7 +36,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2)$/
 
             }, {
-                use: 'url-loader?limit=100000',
+                use: 'url-loader?limit=1000',
                 test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2)$/
             }
 
@@ -44,7 +45,9 @@ module.exports = {
     plugins: [new HtmlWebPackPlugin({
             template: path.resolve(__dirname, 'index.html'),
             filename: './index.html'
-        })],
+        }),        
+            new webpack.HotModuleReplacementPlugin()
+    ],
     resolve: {
         modules: [
             path.resolve(__dirname, 'node_modules'),
