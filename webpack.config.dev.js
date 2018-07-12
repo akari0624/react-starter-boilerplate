@@ -31,14 +31,23 @@ module.exports = {
                 ],
                 test: /\.(css|less)$/
 
-            }, {
-                use: 'file-loader',
-                test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2)$/
+            }, 
+            {
+                use: 'url-loader?limit=8192',
+                test: /\.(svg)$/
+            },
+            {
+                test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2)$/,
+                use: [
+                    {
+                loader:'file-loader',
+                options:{
+                    name:'[path][name].[ext]',
+                    publicPath:'/'  
+                  }
+                    }]
 
-            }, {
-                use: 'url-loader?limit=1000',
-                test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2)$/
-            }
+            },
 
         ]
     },
