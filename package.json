@@ -7,7 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --public-host --config ./webpack.config.dev.js --mode development ",
     "clean": "rimraf dist/*",
-    "dist": "npm run clean && webpack --config ./webpack.config.dist.js --progress --bail --env dist -p",
+    "dist": "npm run clean && webpack --config ./webpack.config.prod.js --progress --bail --env dist -p",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
     "deploy": "npm run dist && gh-pages -d dist"
