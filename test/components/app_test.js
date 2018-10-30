@@ -1,11 +1,11 @@
 import { renderComponent , expect } from '../test_helper'
-import App from '../../src/components/app'
+import IndexPage from '../../src/IndexRouter'
 
-describe('App' , () => {
+describe('Index should appear' , () => {
   let component
 
   beforeEach(() => {
-    component = renderComponent(App)
+    component = renderComponent(IndexPage)
   })
 
   it('renders something', () => {
