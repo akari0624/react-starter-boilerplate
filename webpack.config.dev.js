@@ -37,7 +37,7 @@ module.exports = {
         use: 'url-loader?limit=8192',
         test: /\.(svg)$/
       }, {
-        test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2)$/,
+        test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2|ico)$/,
         use: [
           {
             loader: 'file-loader',

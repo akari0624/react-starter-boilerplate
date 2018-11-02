@@ -38,7 +38,7 @@ module.exports = {
         use: 'url-loader?limit=8192',
         test: /\.(svg)$/
       }, {
-        test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2)$/,
+        test: /\.(png|jpg|gif|mp4|ogg|svg|css|ttf|woff|woff2|ico)$/,
         use: [
           {
             loader: 'file-loader',
@@ -48,10 +48,6 @@ module.exports = {
             }
           }
         ]
-<<<<<<< HEAD
-=======
-
->>>>>>> d8dd3e61ef1a0938464c9c502ab4800af4501714
       }
     ]
   },
